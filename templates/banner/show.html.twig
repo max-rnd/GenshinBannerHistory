@@ -15,6 +15,12 @@
                 <th>Date</th>
                 <td>{{ banner.date ? banner.date|date('Y-m-d') : '' }}</td>
             </tr>
+            <tr>
+                <th>Characters</th>
+                <td>{% for character in banner.characters %}
+                    {{ character.name }}
+                {% endfor %}</td>
+            </tr>
         </tbody>
     </table>
 
